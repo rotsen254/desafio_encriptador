@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Encriptador</title>
+  </head>
+
+  <body class="container">
+    <header>
+      <div class="logo">
+        <a href="index.html"  class="logo">
+          <img src="./assets/Logo.svg" alt="alura"></img>
+        </a> 
+      </div>
+    </header>
+    
+    <main>
+      <div class="textEncriptar">
+        <input 
+        id="input"
+        type="text"
+        placeholder="Ingrese el Texto"
+       />
+
+        <div class="advertencia">
+          <img class="exclamacion" src="./assets/exclamacion.png">
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="buttons">
+          <button id="encriptar"> Encriptar</button>
+          <button id="Desencriptar">Desencriptar</button>
+          <div id="contenido"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="mensaje" >
+        <img src="./assets/Muñeco.png">
+        <h2>Ningún mensaje fue encontrado</h2>        
+        <p>Ingresa el texto que desees encriptar o Desencriptar</p>
+        
+      </div>
+      <div id="resultado" class="hidden">
+        <p id="resuelto"></p>
+        <button id="Copia" class="copiar" >Copiar</button>
+      </div>
+      
+    </footer>
+    <script src="./encriptador.js"></script>
+    <script src="./desencriptador.js"></script>
+  </body>
+</html>
